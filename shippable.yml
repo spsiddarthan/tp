@@ -7,7 +7,9 @@ python:
   - 3.4
 
 install:
-  - pip install --pre pytz
+  - mkdir requirements
+  - touch requirements/base.txt
+  - touch requirements/test.txt
   - pip install --upgrade -r requirements/base.txt
   - pip install --upgrade -r requirements/test.txt
 
